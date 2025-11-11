@@ -114,6 +114,9 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --spacing-225: 14.063rem;
+  --spacing-273: 17.063rem;
+  --spacing-459: 28.688rem;
+  --spacing-765: 47.813rem;
   --spacing-957: 59.813rem;
 }
 
@@ -208,11 +211,11 @@
     @apply opacity-80 translate-y-0;
   }
 
-  .btn-outline-gradient {
+  .outline-gradient {
     @apply relative text-white px-6 py-2 rounded-full font-medium transition-all duration-300 border border-transparent;
   }
 
-  .btn-outline-gradient::before {
+  .outline-gradient::before {
     content: '';
     @apply absolute inset-0 rounded-full p-0.5;
     background: var(--color-gradient-secondary);
@@ -222,7 +225,7 @@
     mask-composite: exclude;
   }
 
-  .btn-outline-gradient:hover {
+  .outline-gradient:hover {
     @apply opacity-90 -translate-y-0.5;
   }
 
