@@ -1,4 +1,4 @@
-type Type = {
+type Career = {
   heading: string;
   text: string;
   date: string;
@@ -6,7 +6,7 @@ type Type = {
   description: string[];
 };
 
-const CareerCardConst: Type[] = [
+const CareerCardConst: Career[] = [
   {
     heading: 'Frontend Developer',
     text: 'Google',

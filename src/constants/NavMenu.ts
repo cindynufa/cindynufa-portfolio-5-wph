@@ -1,9 +1,9 @@
-type Type = {
+type Nav = {
   href: string;
   text: string;
 };
 
-const NavMenuConst: Type[] = [
+const NavMenuConst: Nav[] = [
   { href: '/#home', text: 'Home' },
   { href: '/#about', text: 'About' },
   { href: '/#skills', text: 'Skills' },

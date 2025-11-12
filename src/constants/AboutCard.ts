@@ -1,9 +1,9 @@
-type Type = {
+type About = {
   heading: string;
   text: string;
 };
 
-const AboutCardConst: Type[] = [
+const AboutCardConst: About[] = [
   { heading: '3+', text: 'Years Experience' },
   { heading: '30+', text: 'Projects' },
   { heading: '90+', text: 'Student' },
