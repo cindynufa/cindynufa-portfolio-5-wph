@@ -115,7 +115,10 @@
   --radius-xl: calc(var(--radius) + 4px);
   --spacing-225: 14.063rem;
   --spacing-273: 17.063rem;
+  --spacing-385: 24.063rem;
   --spacing-459: 28.688rem;
+  --spacing-515: 32.188rem;
+  --spacing-587: 36.688rem;
   --spacing-765: 47.813rem;
   --spacing-957: 59.813rem;
 }
@@ -204,7 +207,7 @@
   }
 
   .btn-gradient:hover {
-    @apply opacity-90 -translate-y-0.5;
+    @apply opacity-50 cursor-pointer;
   }
 
   .btn-gradient:active {
@@ -226,11 +229,29 @@
   }
 
   .outline-gradient:hover {
-    @apply opacity-90 -translate-y-0.5;
+    @apply opacity-60 cursor-pointer;
   }
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: var(--color-gradient-secondary);
+  }
+
+  .border-gradient {
+    @apply relative px-6 py-2 duration-300 border border-transparent;
+  }
+
+  .border-gradient::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg p-0.5;
+    background: var(--color-gradient-secondary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .border-gradient:hover {
+    @apply opacity-60;
   }
 }
