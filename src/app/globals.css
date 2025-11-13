@@ -116,6 +116,7 @@
   --spacing-225: 14.063rem;
   --spacing-273: 17.063rem;
   --spacing-385: 24.063rem;
+  --spacing-457: 28.563rem;
   --spacing-459: 28.688rem;
   --spacing-515: 32.188rem;
   --spacing-587: 36.688rem;
@@ -257,5 +258,35 @@
 
   .color-gradient {
     @apply text-neutral-100 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] px-6 py-2 rounded-full font-medium transition-all duration-300;
+  }
+
+  .contact-border-gradient {
+    @apply border-0 border-solid;
+    border-image-source: linear-gradient(
+      180deg,
+      #262626 0%,
+      rgba(38, 38, 38, 0) 100%
+    );
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+  }
+
+  .glass {
+    @apply bg-white/5 shadow-lg;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+  }
+
+  .glass-gradient {
+    @apply border-0 border-solid bg-white/5 shadow-lg;
+    border-image-source: linear-gradient(
+      180deg,
+      #262626 0%,
+      rgba(38, 38, 38, 0) 100%
+    );
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
   }
 }
