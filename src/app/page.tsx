@@ -9,6 +9,7 @@ import Comparison from '@/components/comparison';
 import Portfolio from '@/components/portfolio';
 import Testimonials from '@/components/testimonials';
 import Contact from '@/components/contact';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }
