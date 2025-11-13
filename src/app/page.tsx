@@ -7,6 +7,7 @@ import Skills from '@/components/skills';
 import Faq from '@/components/faq';
 import Comparison from '@/components/comparison';
 import Portfolio from '@/components/portfolio';
+import Testimonials from '@/components/testimonials';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Faq />
       <Comparison />
       <Portfolio />
+      <Testimonials />
     </>
   );
 }
