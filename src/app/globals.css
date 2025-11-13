@@ -254,4 +254,8 @@
   .border-gradient:hover {
     @apply opacity-60;
   }
+
+  .color-gradient {
+    @apply text-neutral-100 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] px-6 py-2 rounded-full font-medium transition-all duration-300;
+  }
 }
