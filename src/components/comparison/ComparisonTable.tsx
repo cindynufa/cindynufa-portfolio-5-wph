@@ -7,7 +7,10 @@ export default function ComparisonTable() {
     <div className="w-full p-6 border-0 bg-neutral-500 rounded-3xl">
       <div className="flex flex-row border-0 color-gradient justify-between items-center">
         {ComparisonTitleConst.map((comparisonTitle, index) => (
-          <p key={index} className="w-full p-2 gap-2 text-center">
+          <p
+            key={index}
+            className="w-full p-2 gap-2 text-center text-md font-bold text-neutral-100"
+          >
             {comparisonTitle.text}
           </p>
         ))}
@@ -18,7 +21,9 @@ export default function ComparisonTable() {
             key={index}
             className="grid grid-cols-3 w-full p-6 text-center border-t border-t-neutral-400"
           >
-            <p>{comparisonItem.text}</p>
+            <p className="text-md font-semibold text-neutral-100">
+              {comparisonItem.text}
+            </p>
             <Image
               src={comparisonItem.check}
               alt="Check"
