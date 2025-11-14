@@ -309,7 +309,7 @@
   }
 
   .line {
-    @apply w-693 h-2 rotate-90 border-0 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] rounded-2xl;
+    @apply w-2 border-0 bg-[linear-gradient(0deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] rounded-2xl;
   }
 
   .line-circle {
@@ -318,5 +318,10 @@
 
   .skill-bar-gradient {
     @apply h-3 border-0 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] rounded-full;
+  }
+
+  .skill-card {
+    @apply w-40.5 h-20 p-2.5 gap-2.5 border bg-black/40 rounded-2xl backdrop-blur-md border-transparent bg-clip-padding;
+    border-image: linear-gradient(450deg, #d946ef, #6366f1) 1;
   }
 }
