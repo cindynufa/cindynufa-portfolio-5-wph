@@ -203,6 +203,15 @@
 }
 
 @layer utilities {
+  .glow {
+    @apply rounded-2xl backdrop-blur-[116px];
+    /*background: radial-gradient(
+      circle at center,
+      rgba(104, 49, 225, 0.6) 0%,
+      rgba(104, 49, 225, 0.2) 40%,
+      rgba(104, 49, 225, 0.0) 80%*/
+  }
+
   .btn-gradient {
     @apply text-neutral-100 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] px-6 py-2 rounded-full font-medium transition-all duration-300;
   }
@@ -288,5 +297,13 @@
     border-image-repeat: stretch;
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
+  }
+
+  .about-card {
+    @apply w-273 h-273 p-5 gap-2 border rounded-full;
+  }
+
+  .about-card:nth-child(even){
+    @apply bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52];
   }
 }
