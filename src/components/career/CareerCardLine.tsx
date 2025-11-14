@@ -1,10 +1,14 @@
 export default function CareerCardLine() {
   return (
-    <div className="w-fit line translate-y-70 -ml-70">
-      <div className="relative flex flex-col w-5 h-5 border-6 rounded-full justify-between">
-        <div className="absolute line-circle"></div>
-        <div className="absolute line-circle"></div>
-        <div className="absolute line-circle"></div>
+    <div className="absolute flex flex-col h-[calc(100%-273px)] top-0 line justify-between">
+      <div className="w-5 h-5 -ml-1.5 border-6 rounded-full">
+        <div className="absolute line-circle" />
+      </div>
+      <div className="w-5 h-5 -ml-1.5 border-6 rounded-full">
+        <div className="absolute line-circle" />
+      </div>
+      <div className="w-5 h-5 -ml-1.5 border-6 rounded-full">
+        <div className="absolute line-circle" />
       </div>
     </div>
   );

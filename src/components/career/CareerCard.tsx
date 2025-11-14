@@ -6,9 +6,9 @@ import CareerCardLine from './CareerCardLine';
 
 export default function CareerCard() {
   return (
-    <div className="flex flex-row w-full gap-6">
+    <div className="relative flex flex-row w-full gap-6">
       <CareerCardLine />
-      <div className="flex flex-col w-full gap-6">
+      <div className="flex flex-col w-full gap-6 ml-10">
         {CareerCardConst.map((careerCard, index) => (
           <div
             key={index}
