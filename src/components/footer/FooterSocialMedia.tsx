@@ -7,7 +7,7 @@ export default function FooterSocialMedia() {
       {FooterConst.map((footerSocmed, index) => (
         <div
           key={index}
-          className="w-12 h-12 border border-neutral-400 rounded-full"
+          className="flex w-12 h-12 border border-neutral-400 rounded-full justify-center items-center"
         >
           <Image
             src={footerSocmed.src}
