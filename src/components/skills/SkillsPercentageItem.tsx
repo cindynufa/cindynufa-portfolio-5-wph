@@ -13,8 +13,8 @@ export default function SkillsPercentageItem({
         <h4 className="text-md font-semibold text-neutral-100">{heading}</h4>
         <p className="text-md font-semibold text-neutral-100">{percentage}%</p>
       </div>
-      <div className="relatives w-full h-3 border-0 bg-neutral-400 rounded-full">
-        <div className="absolute h-3 border-0 btn-gradient rounded-full"></div>
+      <div className="relative w-full h-3 border-0 bg-neutral-400 rounded-full overflow-hidden">
+        <div className="skill-bar-gradient" style={{ width: `${percentage}%`}}></div>
       </div>
     </div>
   );
