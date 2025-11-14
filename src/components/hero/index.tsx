@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 
 export default function Hero() {
   return (
-    <div className="w-full items-center">
+    <section id='home' className="w-full items-center">
       <div className="flex flex-col w-957 h-auto mx-auto pt-273 gap-5">
         <HeroButtonPortfolio />
         <HeroHeading />
@@ -16,6 +16,6 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
