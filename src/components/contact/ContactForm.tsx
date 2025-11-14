@@ -6,7 +6,7 @@ import { Button } from '../ui/button';
 export default function ContactForm() {
   return (
     <div className="w-120 p-6 gap-5 border-0 bg-gray-900 rounded-3xl">
-      <Form.Root className="w-full gap-5">
+      <Form.Root className="flex flex-col w-full gap-5">
         <Form.Field className="" name="name">
           <Form.Message match="valueMissing" className="text-red-500">
             Please enter your name
