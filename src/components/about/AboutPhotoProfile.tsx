@@ -8,7 +8,7 @@ export default function AboutPhotoProfile() {
         alt="Photo Profile"
         width={1160}
         height={459}
-        className='w-290 h-459 rounded-3xl'
+        className='w-full h-459 object-cover mx-auto rounded-3xl'
       />
     </div>
   );
