@@ -248,24 +248,6 @@
     background-image: var(--color-gradient-secondary);
   }
 
-  .border-gradient {
-    @apply relative px-6 py-2 duration-300 border border-transparent;
-  }
-
-  .border-gradient::before {
-    content: '';
-    @apply absolute inset-0 rounded-lg p-0.5;
-    background: var(--color-gradient-secondary);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
-
-  .border-gradient:hover {
-    @apply opacity-60;
-  }
-
   .color-gradient {
     @apply text-neutral-100 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] px-6 py-2 rounded-full font-medium transition-all duration-300;
   }
@@ -323,5 +305,16 @@
   .skill-card {
     @apply w-40.5 h-20 p-2.5 gap-2.5 border bg-black/40 rounded-2xl backdrop-blur-md border-transparent bg-clip-padding;
     border-image: linear-gradient(450deg, #d946ef, #6366f1) 1;
+  }
+
+  .testimonials-card {
+    @apply w-125 p-5 gap-5 border-0 bg-neutral-500 rounded-2xl;
+  }
+
+  .testimonials-card:hover {
+    @apply border rounded-2xl cursor-pointer;
+    border-image-source: linear-gradient(270deg, #8746eb 0%, #dc49a6 100%);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
   }
 }
