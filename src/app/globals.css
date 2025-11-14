@@ -315,4 +315,8 @@
   .line-circle {
     @apply w-2 h-2 border-0 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] rounded-full;
   }
+
+  .skill-bar-gradient {
+    @apply h-3 border-0 bg-[linear-gradient(270deg,#8746EB_0%,#DC49A6_100%)] shadow-[0px_4px_24px_0px_#8746EB52] rounded-full;
+  }
 }
