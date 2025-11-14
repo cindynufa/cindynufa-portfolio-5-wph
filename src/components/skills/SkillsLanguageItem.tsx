@@ -5,6 +5,7 @@ interface SkillsLanguageItemProps {
   alt: string;
   width: number;
   height: number;
+  className?: string;
 }
 
 export default function SkillsLanguageItem({
@@ -12,9 +13,10 @@ export default function SkillsLanguageItem({
   alt,
   width,
   height,
+  className,
 }: SkillsLanguageItemProps) {
   return (
-    <div className="flex w-40.5 h-20 p-2.5 gap-2.5 justify-center items-center border border-gradient">
+    <div className={`absolute flex justify-center items-center skill-card ${className}`}>
       <Image src={src} alt={alt} width={width} height={height} />
     </div>
   );
